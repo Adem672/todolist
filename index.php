@@ -5,13 +5,13 @@
 // "http://localhost:8888/comem-archidep-php-todo-exercise/", then BASE_URL
 // should be "/comem-archidep-php-todo-exercise/". If you are accessing the
 // application at "http://localhost:8888", then BASE_URL should be "/".
-define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
+define('BASE_URL', '/');
 
 // Database connection parameters.
 define('DB_USER', 'root');
-define('DB_PASS', getenv('TODOLIST_DB_PASS'));
+define('DB_PASS', 'Ad&m2002');
 define('DB_NAME', 'todolist');
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
 
 $db = new PDO('mysql:host='.DB_HOST.';port='.DB_PORT.';dbname='.DB_NAME, DB_USER, DB_PASS);
